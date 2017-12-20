@@ -1,0 +1,20 @@
+[
+  {
+    "recipe_name": "PB&J",
+    "recipe_description":"Nutty almond butter with tangy apricot jelly between two slices of challah bread",
+    "recipe_instructions":"1. Slice challah bread into slices. 2. Spread almond butter on one slice. 3. Spread apricot jelly on a second slice. 4. Push the slices together. Make sure the jelly and butter are touching. 5. Enjoy",
+    "recipe_ingredients":"Almond butter. Apricot Jelly. Challah Bread"
+  },
+  {
+    "recipe_name":"Pumpkin Cake",
+    "recipe_description":"A decedant pumpkin cake, to complement the cold winter weather",
+    "recipe_instructions":"1. Preheat oven to 350 F. Genereously grease a 9x13 inch baking pan. 2. In a large bowl, mix together the spice cake mix and canned pumpkin until well blended. Spread evenly into the prepared pan. 3. Bake for 25 to 30 mintues in the preheated oven, or until a knife inserted into the center comes out clean. Cool and serve, or store in the refrigerator.",
+    "recipe_ingredients":"Spice cake mix. Canned Pumpkin"
+  },
+  {
+    "recipe_name":"Lemon Sorbet",
+    "recipe_description":"Extremely refreshing on a hot day.",
+    "recipe_instructioins":"1. Whisk ingredients together to combine. Pour into a shallow tub or tray and place in the freezer overnight. 2. Once set, break up roughtly with a blunt knife, place in a food processor and blitz until smooth. 3. Return to the freezer until ready to server. Serve in scoops.",
+    "recipe_ingredients":"3 cups (750ml) lemon squash. 1 x tin(395g) condensed milk"
+  }
+]
