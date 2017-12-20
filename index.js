@@ -1,15 +1,19 @@
 const express = require('express')
 const app = express()
-
+const hbs = require('hbs')
 const bodyParser = require('body-parser')
+const recipes = require('./controllers/recipes.js')
 
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({extended: true}))
 
 app.set('view engine', 'hbs')
 
+app.engine()
+
+
 app.get('/', (req, res) => {
-  res.render('welcome')
+  res.render('./welcome')
 })
 
 app.post('/', (req, res) => {
