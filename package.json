@@ -1,0 +1,25 @@
+{
+  "name": "MEHN-Lab",
+  "version": "1.0.0",
+  "description": "Chris - Natalee ## Domain Restaurant/Ingredients Manager ## Requirements * Using MongoDB as your database and Mongoose as your ODM. * Using Express to handle HTTP requests and serve API endpoints. * Adding Handlebars for your views. * Using Node to run your Express server",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Chris-L-Tran/MEHN-Lab.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Chris-L-Tran/MEHN-Lab/issues"
+  },
+  "homepage": "https://github.com/Chris-L-Tran/MEHN-Lab#readme",
+  "dependencies": {
+    "express": "^4.16.2",
+    "hbs": "^4.0.1",
+    "mongoose": "^4.13.7"
+  }
+}
