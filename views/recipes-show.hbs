@@ -7,10 +7,14 @@
 
 <h2>Update Recipe</h2>
 <form action="/recipes/{{ recipe.name }}?_method=put" method="post">
+  <label for='recipe_name'>Recipe Name</label>
   <input type="text" name="recipe[name]" value="{{ recipe.name }}">
+  <label for='recipe_name'>Recipe Description</label>
   <input type="text" name="recipe[description]" value="{{ recipe.description}}">
+  <label for='recipe_name'>Recipe Instructions</label>
   <input type="text" name="recipe[ingredients]" value="{{ recipe.ingredients }}">
-    <input type="text" name="recipe[instructions]" value="{{ recipe.instructions }}">
+  <label for='recipe_name'>Recipe Ingredients</label>
+  <input type="text" name="recipe[instructions]" value="{{ recipe.instructions }}">
   <input type="submit" value="update">
 </form>
 

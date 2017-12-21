@@ -10,18 +10,18 @@ app.use(bodyParser.urlencoded({extended: true}))
 app.set('view engine', 'hbs')
 
 app.engine(
-  '.hbs', 
+  '.hbs',
   hbs({
     extname: ".hbs",
     partialsDir: "views/",
     layoutsDir: "views/",
-    defaultLayout: "layout-main"
+    defaultLayout: "layout"
   })
 )
 
 
 app.get('/', (req, res) => {
-  res.render('./welcome')
+  res.render('recipes-show')
 })
 
 app.get("/:name", (req, res) => {
@@ -31,11 +31,11 @@ app.get("/:name", (req, res) => {
 
 // app.use("/recipes", recipes)
 
-
+/*
 app.post('/', (req, res) => {
   res.send(`${req.body.recipe_name} ${req.body.recipe_description} ${req.body.recipe_instructions} ${req.body.recipe_ingredients}`)
 })
-
+*/
 app.listen(4000, () => {
   console.log('yay')
 })

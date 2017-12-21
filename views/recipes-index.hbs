@@ -1,11 +1,11 @@
-<h2>{{recipes.length}} recipes available</h2>
+<h2>{{recipes.length}} Recipes Available</h2>
 {{#each recipes as |recipe index|}}
 <h3>
   <a href='/recipes/{{recipe.name}}'>{{recipe.name}}</a>
 </h3>
 {{/each}}
 
-<h2>Register New Candidate</h2>
+<h2>Insert new Recipe!!</h2>
 <form action ='/recipes' method='post'>
   <input type='text' name='recipe[name]' placeholder='Name'>
   <input type='text' name='recipe[description]' placeholder='description'>
