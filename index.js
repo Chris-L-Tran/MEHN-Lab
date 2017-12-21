@@ -2,7 +2,7 @@ const express = require('express')
 const app = express()
 const hbs = require('express-handlebars')
 const bodyParser = require('body-parser')
-const recipes = require('./controllers/recipes.js')
+const recipes = require('./controllers/recipes')
 
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({extended: true}))
@@ -29,7 +29,7 @@ app.get("/:name", (req, res) => {
 })
 
 
-app.use("/recipes", recipes)
+// app.use("/recipes", recipes)
 
 
 app.post('/', (req, res) => {
