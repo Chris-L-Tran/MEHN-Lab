@@ -1,9 +1,9 @@
-const Recipe = require('./schema')
+const recipe = require('./schema')
 const seedData = require('./seeds.json')
 
-Recipe.remove({})
+recipe.Recipe.remove({})
   .then(() => {
-    return Recipe.collection.insert(seedData)
+    return recipe.Recipe.collection.insert(seedData)
   })
   .then(() => {
     process.exit()

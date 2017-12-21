@@ -1,7 +1,7 @@
 {
   "name": "MEHN-Lab",
   "version": "1.0.0",
-  "description": "Chris - Natale    e ## Domain Restaurant/Ingredients Manager ## Requirements * Using MongoDB as your database and Mongoose as your ODM. * Using Express to handle HTTP requests and serve API endpoints. * Adding Handlebars for your views. * Using Node to run your Express server",
+  "description": "Chris - Natalee ## Domain Restaurant/Ingredients Manager ## Requirements * Using MongoDB as your database and Mongoose as your ODM. * Using Express to handle HTTP requests and serve API endpoints. * Adding Handlebars for your views. * Using Node to run your Express server",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -22,6 +22,7 @@
     "express": "^4.16.2",
     "express-handlebars": "^3.0.0",
     "hbs": "^4.0.1",
+    "method-override": "^2.3.10",
     "mongo": "^0.1.0",
     "mongoose": "^4.13.7"
   }
