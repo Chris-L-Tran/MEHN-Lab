@@ -4,10 +4,6 @@ function home (req, res) {
   res.render('index')
 }
 
-module.exports = {
-  home: home
-}
-
 function getSignup (request, response) {
   response.render('signup.hbs', { message: request.flash('signupMessage') })
 }
@@ -49,5 +45,6 @@ module.exports = {
   getSignup: getSignup,
   postSignup: postSignup,
   getLogout: getLogout,
-  secret: secret
+  secret: secret,
+  home: home
 }

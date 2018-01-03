@@ -30,6 +30,9 @@ app.get('/', (req, res) => {
 
 app.use('/recipes', recipes)
 
+var routes = require('./config/routes')
+app.use('/login', routes)
+
 app.listen(4000, () => {
   console.log('yay')
 })
