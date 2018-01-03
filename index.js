@@ -25,10 +25,13 @@ app.engine(
 app.use('/assets', express.static('public'))
 
 app.get('/', (req, res) => {
-  res.render('login')
+  res.render('welcome')
 })
 
 app.use('/recipes', recipes)
+
+var routes = require('./config/routes')
+app.use('/login', routes)
 
 app.listen(4000, () => {
   console.log('yay')

@@ -1,12 +1,9 @@
 var express = require('express')
 var router = express.Router()
 var usersController = require('../controllers/users')
-
-function authenticatedUser (req, res, next) {
-  if (req.isAuthenticated()) return next()
-
-  res.redirect('/')
-}
+var bodyParser = require('body-parser')
+var methodOverride = require('method-override')
+var passport = require('passport')
 
 router.route('/')
   .get(usersController.home)
