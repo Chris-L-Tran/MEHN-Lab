@@ -1,5 +1,5 @@
-var LocalStrategy   = require('passport-local').Strategy;
-var User            = require('../models/user');
+var LocalStrategy = require('passport-local').Strategy;
+var User = require('../models/user');
 
 module.exports = function(passport) {
   passport.serializeUser(function(user, done) {
@@ -26,8 +26,8 @@ module.exports = function(passport) {
         return callback(null, false, req.flash('signupMessage', 'This email is already used.'));
       } else {
 
-        var newUser            = new User();
-        newUser.local.email    = email;
+        var newUser = new User();
+        newUser.local.email = email;
         newUser.local.password = newUser.encrypt(password);
 
         newUser.save(function(err) {
