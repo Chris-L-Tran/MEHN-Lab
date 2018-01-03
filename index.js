@@ -25,7 +25,7 @@ app.engine(
 app.use('/assets', express.static('public'))
 
 app.get('/', (req, res) => {
-  res.render('welcome')
+  res.render('login')
 })
 
 app.use('/recipes', recipes)
