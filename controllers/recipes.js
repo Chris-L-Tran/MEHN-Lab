@@ -52,10 +52,11 @@ router.post('/', (req, res) => {
 router.put('/:name', (req, res) => {
   Recipe.findOneAndUpdate({name: req.params.name}, req.body.recipe, {new: true})
   .then((recipe) => {
-    res.redirect(`/recipes/${recipes.name}`)
+    res.redirect(`/recipes/`)
   })
   .catch((err) => {
     console.log(err)
   })
 })
+
 module.exports = router
