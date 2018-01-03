@@ -1,5 +1,13 @@
 var passport = require('passport')
 
+function home (req, res) {
+  res.render('index')
+}
+
+module.exports = {
+  home: home
+}
+
 function getSignup (request, response) {
   response.render('signup.hbs', { message: request.flash('signupMessage') })
 }
